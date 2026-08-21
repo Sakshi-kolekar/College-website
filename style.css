@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #f8f9fc;
+}
+
+
+/* Header */
+
+header {
+    background: #0B1F3A;
+    color: white;
+    padding: 20px 6%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+
+/* Navigation */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #D4A017;
+}
+
+
+/* Hero */
+
+.hero {
+    background: #eef4fb;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h2 {
+    color: #0B1F3A;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+/* Button */
+
+button {
+    background: #D4A017;
+    color: #0B1F3A;
+
+    border: none;
+    padding: 13px 28px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #b88908;
+    color: white;
+}
+
+
+/* Sections */
+
+.section {
+    padding: 60px 7%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #0B1F3A;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.section p {
+    line-height: 1.7;
+}
+
+
+/* Courses */
+
+.courses {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.course {
+    background: white;
+
+    width: 250px;
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px #d6d9df;
+
+    border-top: 4px solid #D4A017;
+}
+
+.course h3 {
+    color: #12355B;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+
+/* Features */
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.features p {
+    background: white;
+    padding: 15px 20px;
+
+    border-radius: 6px;
+
+    box-shadow: 0 2px 8px #ddd;
+}
+
+
+/* Contact */
+
+.contact {
+    background: #eaf0f7;
+}
+
+.contact p {
+    margin: 8px 0;
+}
+
+
+/* Footer */
+
+footer {
+    background: #0B1F3A;
+    color: white;
+
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 6px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .courses {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course {
+        width: 90%;
+    }
+
+}
